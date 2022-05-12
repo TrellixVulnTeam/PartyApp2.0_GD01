@@ -1,0 +1,30 @@
+@import "variables/variables";
+@import "sass2/extend";
+@import "sass2/maps";
+@import "sass2/mixin";
+
+.populares, .proximos_eventos {
+    background-color: gray;
+}
+.carrusel_con_imagenes_grande {
+    @include alinearYcentrarFlex(center);
+    width: map-get($tamaños, escritorio)/2;
+    @extend %centradorDiv;
+}
+
+.seccion {
+    @extend %secciones;
+}
+
+@media (max-width: $tablet) {
+    .carrusel_con_imagenes_grande {
+        @include alinearYcentrarFlex(center);
+        width: map-get($tamaños, tableta)/2;
+    }
+}
+@media (max-width: $mobile) {
+    .carrusel_con_imagenes_grande {
+        @include alinearYcentrarFlex(center);
+        width: map-get($tamaños, movil)/2;
+    }
+}

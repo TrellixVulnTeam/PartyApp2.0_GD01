@@ -1,0 +1,12 @@
+@import "../variables/variables";
+
+
+%centradorDiv {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+%secciones {
+    margin: 0 5% 0 5%;
+}
+

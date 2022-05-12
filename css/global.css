@@ -1,0 +1,30 @@
+.carrusel_con_imagenes_grande {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.seccion {
+  margin: 0 5% 0 5%; }
+
+.populares, .proximos_eventos {
+  background-color: gray; }
+
+.carrusel_con_imagenes_grande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 512px; }
+
+@media (max-width: 768px) {
+  .carrusel_con_imagenes_grande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 384px; } }
+
+@media (max-width: 480px) {
+  .carrusel_con_imagenes_grande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px; } }
