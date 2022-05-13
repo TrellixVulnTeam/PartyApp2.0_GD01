@@ -1,0 +1,27 @@
+@import "variables/variables";
+@import "sass2/extend";
+@import "sass2/maps";
+@import "sass2/mixin";
+
+@media (max-width: $mobile) {
+    .seccion1 {
+        width: 100%!important;
+        @include acentradorDiv;
+    }
+    .seccion2 {
+        width: 100%
+    }
+    .categorias {
+        @include alinearYcentrarFlex(space-between);
+        margin: 0;
+    }
+    .categorias img {
+        transform: scale(0.7);
+    }
+    h2 {
+        font-size: xx-large;
+    }
+    p {
+        font-size: larger;
+    }
+}

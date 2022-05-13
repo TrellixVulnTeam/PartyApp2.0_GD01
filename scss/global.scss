@@ -2,29 +2,76 @@
 @import "sass2/extend";
 @import "sass2/maps";
 @import "sass2/mixin";
+@import "sass2/tablet";
+@import "sass2/movil";
+@import "partial/header";
 
-.populares, .proximos_eventos {
-    background-color: gray;
+// .populares, .proximos_eventos {
+//     background-color: gray;
+// }
+
+.logo {
+    width: 50px;
 }
-.carrusel_con_imagenes_grande {
-    @include alinearYcentrarFlex(center);
-    width: map-get($tamaños, escritorio)/2;
+h1 {
+    text-align: center
+}
+
+h2 {
+    @extend %h2;
+}
+p {
+    @extend %h2;
+
+}
+
+body {
+    background-color: $beige;
+}
+
+.seccion1 {
+    @include secciones (60%);
     @extend %centradorDiv;
 }
 
-.seccion {
-    @extend %secciones;
+.seccion2 {
+    @include secciones (40%);
+    @extend %centradorDiv;
+}
+img {
+    border-radius: 15%
 }
 
-@media (max-width: $tablet) {
-    .carrusel_con_imagenes_grande {
-        @include alinearYcentrarFlex(center);
-        width: map-get($tamaños, tableta)/2;
-    }
+.seccion3 {
+    margin: 30px;
 }
-@media (max-width: $mobile) {
-    .carrusel_con_imagenes_grande {
-        @include alinearYcentrarFlex(center);
-        width: map-get($tamaños, movil)/2;
+
+.categorias {
+    @include alinearYcentrarFlex(center);
+    margin: 20px;
+}
+.categorias img {
+    width: 100px;
+    transition: all 0.2s;
+}
+.categorias img:hover {
+    width: 120px;
+    cursor: pointer;
+}
+
+.card{
+    background-color: rgba($color: $gris, $alpha: 0.3);
+    overflow: hidden;
+}
+.notifoto {
+    max-width: 300px ;
+    display: block;
+}
+
+footer {
+    text-align: end;
+    border-top: solid 2px $negro;
+    a {
+        padding: 14px;
     }
 }

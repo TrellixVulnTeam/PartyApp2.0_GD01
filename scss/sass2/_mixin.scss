@@ -1,5 +1,19 @@
+@mixin achicarIconos($tamaño) {
+    height: $tamaño;
+}
+
 @mixin alinearYcentrarFlex($justificado) {
-    display: flex;
-    justify-content: $justificado;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: $justificado;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin secciones ($ancho) {
+    width: $ancho;
+}
+@mixin acentradorDiv {
+    position: static;
+    transform: translateX(0%);
 }

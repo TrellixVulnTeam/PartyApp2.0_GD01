@@ -1,0 +1,11 @@
+@import "../variables/variables";
+
+header ul {
+background-color: $berry;
+    li {
+        a {
+            color: $negro !important;
+            font-size: large;
+        }
+    }
+}

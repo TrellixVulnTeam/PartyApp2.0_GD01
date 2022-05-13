@@ -1,30 +1,104 @@
-.carrusel_con_imagenes_grande {
+.seccion1, .seccion2 {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
 
-.seccion {
-  margin: 0 5% 0 5%; }
+h2, p {
+  color: #1D1E2C;
+  text-align: center; }
 
-.populares, .proximos_eventos {
-  background-color: gray; }
+.seccion1, .seccion2 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
 
-.carrusel_con_imagenes_grande {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 512px; }
+h2, p {
+  color: #1D1E2C;
+  text-align: center; }
 
-@media (max-width: 768px) {
-  .carrusel_con_imagenes_grande {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 384px; } }
+.seccion1, .seccion2 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+h2, p {
+  color: #1D1E2C;
+  text-align: center; }
 
 @media (max-width: 480px) {
-  .carrusel_con_imagenes_grande {
-    display: flex;
-    justify-content: center;
+  .seccion1 {
+    width: 100% !important;
+    position: static;
+    transform: translateX(0%); }
+  .seccion2 {
+    width: 100%; }
+  .categorias {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: space-between;
     align-items: center;
-    width: 240px; } }
+    flex-wrap: wrap;
+    margin: 0; }
+  .categorias img {
+    transform: scale(0.7); }
+  h2 {
+    font-size: xx-large; }
+  p {
+    font-size: larger; } }
+
+header ul {
+  background-color: #9c528b; }
+  header ul li a {
+    color: #1D1E2C !important;
+    font-size: large; }
+
+.logo {
+  width: 50px; }
+
+h1 {
+  text-align: center; }
+
+body {
+  background-color: #d7cdcc; }
+
+.seccion1 {
+  width: 60%; }
+
+.seccion2 {
+  width: 40%; }
+
+img {
+  border-radius: 15%; }
+
+.seccion3 {
+  margin: 30px; }
+
+.categorias {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px; }
+
+.categorias img {
+  width: 100px;
+  transition: all 0.2s; }
+
+.categorias img:hover {
+  width: 120px;
+  cursor: pointer; }
+
+.card {
+  background-color: rgba(89, 101, 111, 0.3);
+  overflow: hidden; }
+
+.notifoto {
+  max-width: 300px;
+  display: block; }
+
+footer {
+  text-align: end;
+  border-top: solid 2px #1D1E2C; }
+  footer a {
+    padding: 14px; }
