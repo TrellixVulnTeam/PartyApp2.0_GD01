@@ -2,12 +2,16 @@
     height: $tamaño;
 }
 
-@mixin alinearYcentrarFlex($justificado) {
+@mixin alinearYcentrarflex($justificado) {
+    display: flex !important;
+    justify-content: $justificado;
+    align-items: center;
+}
+@mixin alinearYcentrarGrid($justificado, $tamaño) {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: $tamaño $tamaño $tamaño;
     justify-items: $justificado;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 @mixin secciones ($ancho) {

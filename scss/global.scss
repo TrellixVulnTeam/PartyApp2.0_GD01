@@ -5,14 +5,26 @@
 @import "sass2/tablet";
 @import "sass2/movil";
 @import "partial/header";
+@import "partial/mainforo";
 
 // .populares, .proximos_eventos {
 //     background-color: gray;
 // }
 
+// solo del index a continuacións
+*{
+    color: $blanco;
+}
+body {
+    background-color: $negro;
+}
+main {
+    margin-bottom: 15px;
+}
 .logo {
     width: 50px;
 }
+
 h1 {
     text-align: center
 }
@@ -20,57 +32,70 @@ h1 {
 h2 {
     @extend %h2;
 }
+
 p {
     @extend %h2;
 
 }
-
-body {
-    background-color: $beige;
+option {
+    color: $negro;
 }
+
 
 .seccion1 {
     @include secciones (60%);
     @extend %centradorDiv;
 }
-
-.seccion2 {
+.seccion3 {
+    margin: 30px;
+}
+.carousel-item {
+    background-color: transparent !important;
+}
+.carrusel_con_imagenes_peque {
     @include secciones (40%);
     @extend %centradorDiv;
 }
+
 img {
     border-radius: 15%
 }
 
-.seccion3 {
-    margin: 30px;
-}
 
 .categorias {
-    @include alinearYcentrarFlex(center);
+    @include alinearYcentrarGrid(center, auto);
     margin: 20px;
 }
+
 .categorias img {
     width: 100px;
     transition: all 0.2s;
 }
+
 .categorias img:hover {
     width: 120px;
     cursor: pointer;
 }
 
-.card{
+.card {
     background-color: rgba($color: $gris, $alpha: 0.3);
     overflow: hidden;
 }
+
 .notifoto {
-    max-width: 300px ;
+    max-width: 300px;
     display: block;
 }
 
+.active {
+    color: $blanco !important;
+    background-color: $negro;
+}
+
 footer {
-    text-align: end;
-    border-top: solid 2px $negro;
+    text-align: center;
+    border-top: solid 2px $blanco;
+
     a {
         padding: 14px;
     }

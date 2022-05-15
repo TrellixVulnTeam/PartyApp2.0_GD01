@@ -11,17 +11,38 @@
     .seccion2 {
         width: 100%
     }
+    .seccion3 {
+        margin: 0 !important;
+        .col-sm-6 {
+            padding: 0;
+        }
+    }
     .categorias {
-        @include alinearYcentrarFlex(space-between);
-        margin: 0;
+        @include alinearYcentrarflex(space-evenly);
     }
     .categorias img {
-        transform: scale(0.7);
+        width: 60px !important;
     }
+    .categorias img:hover {
+        width: 80px !important;
+        cursor: pointer;
+    }    
     h2 {
         font-size: xx-large;
     }
     p {
         font-size: larger;
+    }
+    li {
+        list-style: none !important;
+        padding: 30px 0 30px 0 !important;
+        font-size: large !important;
+    }
+    .notifoto {
+        max-width: 220px !important;
+        
+    }
+    .carrusel_con_imagenes_peque {
+        @include secciones (60% !important);
     }
 }
