@@ -5,6 +5,19 @@
 
 @media (max-width: $mobile) {
     .menu {
+        .foto-perfil-grande{
+            img {
+                transition: all 0.1s;
+            }
+            img:hover{
+                transform: scale(4) translate(-15%, -80%) !important;
+                position: relative;
+                left: 50vw;
+                top: 50vh;
+                width: 120px;
+
+            }
+        }
         li {
             justify-content: center;
             span{
