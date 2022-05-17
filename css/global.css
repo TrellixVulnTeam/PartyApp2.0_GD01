@@ -23,14 +23,11 @@ h2, h3, h4, h5, p {
   text-align: center; }
 
 @media (max-width: 480px) {
-  .menu .foto-perfil-grande img {
-    transition: all 0.1s; }
-  .menu .foto-perfil-grande img:hover {
-    transform: scale(4) translate(-15%, -80%) !important;
-    position: relative;
+  .menu .foto-perfil-grande:hover {
+    position: absolute;
     left: 50vw;
     top: 50vh;
-    width: 120px; }
+    width: 100%; }
   .menu li {
     justify-content: center; }
     .menu li span {
