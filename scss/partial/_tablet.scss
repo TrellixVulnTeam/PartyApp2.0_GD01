@@ -1,0 +1,21 @@
+@import "variables/variables";
+@import "sass2/extend";
+@import "sass2/maps";
+@import "sass2/mixin";
+
+@media all and (max-width: 768px) {
+    .AUn2 {
+        margin: 50px 2% 0 2% !important;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto !important;
+        grid-template-columns: auto !important;
+    }
+    .AUn1 {
+        .col-4{
+        display: none;
+        }
+        .col-8 {
+            width: 100% !important;
+        }  
+    }
+}

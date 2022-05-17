@@ -1,0 +1,27 @@
+@import "../sass2/extend";
+@import "../variables/variables";
+.AUn1 {
+    align-items: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        height: 115px;
+        @extend %centradorDiv;
+        transition: all 0.2s;
+    }
+    img:hover {
+        height: 150px;
+        cursor: pointer;
+    }
+}
+.AUn2 {
+    margin: 50px 5% 0 5%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    p{
+            padding: 10px;
+            border: solid 10px $negro;
+        }
+}

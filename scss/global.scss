@@ -2,11 +2,13 @@
 @import "sass2/extend";
 @import "sass2/maps";
 @import "sass2/mixin";
-@import "sass2/tablet";
-@import "sass2/movil";
-@import "partial/header";
+@import "partial/tablet";
+@import "partial/movil";
+@import "partial/headerYfooter";
 @import "partial/mainPerfil";
 @import "partial/mainTconN";
+@import "partial/mainAU";
+@import "partial/mainInicio";
 
 // .populares, .proximos_eventos {
 //     background-color: gray;
@@ -34,6 +36,14 @@ h2,h3,h4,h5 {
     @extend %h2;
     font-family: 'Bebas Neue', cursive;
 }
+h2 {
+    display: flex;
+    width: 55%;
+    max-width: 445px;
+    margin: auto;
+    justify-content: center;
+    border-bottom: solid 1px $gris; 
+}
 
 p {
     @extend %h2;
@@ -44,68 +54,25 @@ option {
     color: $negro;
 }
 
-
-.seccion1 {
-    @include secciones (60%);
-    @extend %centradorDiv;
-}
-.seccion3 {
-    margin: 30px;
-}
-.carousel-item {
-    background-color: transparent !important;
-}
-.carrusel_con_imagenes_peque {
-    @include secciones (40%);
-    @extend %centradorDiv;
-}
-
 img {
     border-radius: 25px;
-}
-
-
-.categorias {
-    @include alinearYcentrarGrid(center, auto);
-    margin: 20px;
-}
-
-.categorias img {
-    width: 100px;
-    transition: all 0.2s;
-}
-
-.categorias img:hover {
-    width: 120px;
-    cursor: pointer;
-}
-
-.card {
-    background-color: rgba($color: $gris, $alpha: 0.3);
-    overflow: hidden;
-}
-
-.notifoto {
-    max-width: 300px;
-    display: block;
-}
-
-.active {
-    color: $blanco !important;
-    background-color: $negro;
-}
-
-footer {
-    text-align: center;
-    border-top: solid 2px $blanco;
-
-    a {
-        padding: 14px;
-    }
 }
 
 .card-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.principal {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    vertical-align: middle;
+}
+html, body {
+    height: 100%;
+}
+.form-control {
+    background-color: $gris;
 }

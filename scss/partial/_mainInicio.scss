@@ -1,0 +1,42 @@
+.seccion1 {
+    @include secciones (60%);
+    @extend %centradorDiv;
+}
+.seccion3 {
+    margin: 30px;
+}
+.carousel-item {
+    background-color: transparent !important;
+}
+.carrusel_con_imagenes_peque {
+    @include secciones (40%);
+    @extend %centradorDiv;
+}
+.categorias img:hover {
+    width: 120px;
+    cursor: pointer;
+}
+
+.card {
+    background-color: rgba($color: $gris, $alpha: 0.3);
+    overflow: hidden;
+}
+
+.notifoto {
+    max-width: 300px;
+    display: block;
+}
+
+.active {
+    color: $blanco !important;
+    background-color: $negro;
+}
+.categorias {
+    @include alinearYcentrarGrid(center, auto);
+    margin: 20px;
+}
+
+.categorias img {
+    width: 100px;
+    transition: all 0.2s;
+}

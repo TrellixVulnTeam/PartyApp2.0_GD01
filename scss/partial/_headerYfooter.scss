@@ -14,3 +14,11 @@ header ul {
 header {
     width: 100%;
 }
+footer {
+    text-align: center;
+    border-top: solid 2px $blanco;
+
+    a {
+        padding: 14px;
+    }
+}

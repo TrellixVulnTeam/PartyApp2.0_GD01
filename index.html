@@ -11,129 +11,38 @@
   <title>PartyApp</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css ">
 </head>
 
-<body>
-  <header>
+<body class="text-center principal" cz-shortcut-listen="true">
+  <main class="form-signin">
+    <form>
+      <img class="mb-4 animate__animated animate__flip" src="assets/Sintítulo-1.png" alt="logo" height="57">
+      <h1 class="h3 mb-3 fw-normal">Por favor, inicie cesión</h1>
 
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand"><img class="logo" src="assets/Sin título-1.png" alt="logo"></a>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+      <div class="form-floating m-1">
+        <input type="email" class="form-control" id="floatingInput">
+        <label for="floatingInput">Usuario</label>
       </div>
-    </nav>
-    <ul class="nav justify-content-evenly">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/Colaborar.html">Colaborar</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/Sobre nosotros.html">Sobre Nosotros</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/Perfil.html">Perfil</a>
-      </li>
-    </ul>
-  </header>
-  <main>
-    <div class="seccion1 populares">
-      <h2>
-        Eventos populares
-      </h2>
-      <p>
-        Los eventos del momento, aquí a la mano!
-      </p>
-      <div class="carrusel_con_imagenes">
-        <!-- bootstrap carrusel -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/Grilla700x390-1.png" class="d-block w-100" alt="calamaro">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Grilla700x390-2.jpg" class="d-block w-100" alt="louis-tomlison">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Grilla700x390-3.jpg" class="d-block w-100" alt="divididos">
-            </div>
-          </div>
-        </div>
+      <div class="form-floating m-1">
+        <input type="password" class="form-control" id="floatingPassword">
+        <label for="floatingPassword">Contraseña</label>
       </div>
-    </div>
-    <div class="categorias">
-      <img src="assets/disco-ball.png" alt="Discotecas">
-      <img src="assets/concert.png" alt="Conciertos">
-      <img src="assets/champagne-glass.png" alt="Chill">
-    </div>
-    <div class="seccion2 proximos_eventos">
-      <h2>
-        Próximos Eventos
-      </h2>
-      <p>
-        Ansioso por salir? Lo que se viene para las siguientes noches.
-      </p>
-      <div class="carrusel_con_imagenes_peque">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/lotus-club.jpg" class="d-block w-100" alt="lotus-club">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/trotsky-vengaran-de-coleccion-98432-img.jpg" class="d-block w-100" alt="trosky-vengaran">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/yendo-no-llegando-host-1405-100481-img.jpg" class="d-block w-100" alt="perro-primo">
-            </div>
-          </div>
-        </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Recuérdame
+        </label>
       </div>
-    </div>
-    <div class="seccion3 noticias">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Concierto de Wos</h5>
-              <p class="card-text">
-                <img class="notifoto" src="assets/wos.jpg" alt="Conciertos"> 
-                Un lugar increible, disponible a partir de noviembre 2022.
-              </p>
-              <a href="#" class="btn btn-dark">Saber más...!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mega Disco¡</h5>
-              <p class="card-text">                
-                <img class="notifoto" src="assets/Discou.jpg" alt="Discotecas">
-                Un lugar increible, disponible a partir de noviembre 2022.
-              </p>
-              <a href="#" class="btn btn-dark">Saber más...!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <button class="w-100 btn btn-lg btn-dark m-1" type="submit"><a class="rellenar-contenedor"
+          href="pages/Inicio.html">Entrar como Cliente</a></button>
+      <button class="w-100 btn btn-lg btn-dark m-1" type="submit">Entrar como RRPP</button>
+      <button class="w-100 btn btn-lg btn-dark m-1" type="submit">Entrar como Portero</button>
+      <button class="w-100 btn btn-lg btn-dark m-1" type="submit">Entrar como Admin</button>
+      <p class="mt-5 mb-3 text-muted">© 2022–2022</p>
+    </form>
   </main>
-  <footer>
-    <a href="#">Contactanos</a>
-    <a href="#">Ayuda</a>
-    <a href="#">Términos y Condiciones</a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-
 </body>
-
-</html>

@@ -4,6 +4,14 @@
 @import "sass2/mixin";
 
 @media (max-width: $mobile) {
+    
+    .exit {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center !important;
+        align-items: center;
+    }
     .menu {
         .foto-perfil-grande:hover{
                 position: absolute;

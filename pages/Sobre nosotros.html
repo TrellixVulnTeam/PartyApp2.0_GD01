@@ -11,6 +11,7 @@
   <title>PartyApp</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
@@ -21,7 +22,8 @@
 
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand"><img class="logo" src="../assets/Sin título-1.png" alt="logo"></a>
+        <a class="navbar-brand"><img class="logo animate__animated animate__flip" src="../assets/Sintítulo-1.png"
+            alt="logo"></a>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -30,7 +32,7 @@
     </nav>
     <ul class="nav justify-content-evenly">
       <li class="nav-item">
-        <a class="nav-link"  href="../index.html">Inicio</a>
+        <a class="nav-link" href="Inicio.html">Inicio</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Colaborar.html">Colaborar</a>
@@ -44,16 +46,105 @@
     </ul>
   </header>
   <main>
-      <h1>
-          ¡Sitio en Reconstrucción!
-      </h1>
-      <div class="d-flex justify-content-center">
-        <div class="spinner-border" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
+    <div class="container-fluid row AUn1">
+      <div class="col-4">
+        <img src="../assets/Sintítulo-1.png" class="img-fluid" alt="logo de la página">
       </div>
+      <div class="col-8 mt-4">
+        <h2>
+          ¿Cual es nuestra función?
+        </h2>
+        <p>
+          PartyApp es una app diseñada para poder vender entradas, bebidas, vips, y todo lo que el organizador de una
+          Fiestas, o Club Nocturno, desee ofrecer.
+
+          También es un sistema especializado en la gestión de listas de invitados con el control de acce- so
+          correspondiente a la Fiesta o Club Nocturno.
+
+          Este sistema, permite a su vez, generar una comunidad de personas dentro de la app, que permitirá al
+          organizador, obtener información con los perfiles de sus clientes, generar reportes de diferentes tipos, como
+          por ejemplo, obtener los clientes que cumplen años en determinado periodo, que posibilitara realizar
+          diferentes campañas de marketing con los mismos o simple- mente realizar comunicaciones vía notificaciones
+          de celular o e-mail.
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid row AUn1">
+      <div class="col-4">
+        <img src="../assets/campana-digital.png" class="img-fluid caption" alt="icono-marketing">
+      </div>
+      <div class="col-8">
+        <h2>
+          Ademas...
+        </h2>
+        <p>
+          Una de las claves del marketing, es implementar acciones focalizadas al cliente o grupo de clientes, que nos
+          interesa captar y para ello, es necesario conocer qué tipo de cliente está parti- cipando de la propuesta.
+
+          A su vez, MyPartyApp le permitirá al organizador, promocionar con publicidad dinámica dentro de la app y
+          administrada por él mismo, los productos de los sponsors que apoyan la propuesta del establecimiento,
+          pudiendo lograr diferentes tipos de acuerdos.
+
+          Dentro los varios objetivos de la app, está la automatización de los procesos, generar ex- periencias
+          positivas, fidelizar al cliente con el establecimiento, conocer que cliente opta por la propuesta ofrecida, y
+          poder tomar decisiones en forma oportuna con la información en tiempo real.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h2>
+        ¿CÓMO FUNCIONA MyPartyApp?
+      </h2>
+      <p>
+        La app esta compuesta por diferentes tipos de usuarios con diferentes tipos de roles y accesos, permitiendo
+        generar un control eficiente del proceso.
+        <br>
+        Los roles a determinar con cada usuario son:
+      </p>
+    </div>
+    <div class="AUn2">
+      <p class="letra-comun">
+        - “Administrador”, es quien genera los usuarios, configura las entradas, vips y bebidas a ofrecer por la app,
+        crea las listas de invitados, envía notificación y mail a los clientes registrados por la app, y controla y
+        monitorea las ventas, listas y desempeño de los Promotores o RRPP.</p>
+      <p class="letra-comun">
+        - “Portero”, es quien realiza el escaneo del código QR obtenido por el cliente, al realizar solicitud de acceso
+        sin costo o la compra de una entrada.
+
+        - “Barra”, es quien realiza el escaneo del código QR obtenido por el cliente, al realizar una compra de una
+        bebida.</p>
+      <p class="letra-comun">
+        - “RRPP” o Promotor, es el usuario que invita a sus clientes, otorgándoles un código para ingresar a la app,
+        para que puedan operar con la misma.
+      </p>
+      <p class="letra-comun">
+        El usuario “RRPP” o Promotor, va a disponer de un código (generado por el usuario Administra- dor del
+        establecimiento) que va a ofrecer a sus clientes que tengan la necesidad de anotarse en una lista de acceso sin
+        costo o deseen comprar entradas o bebidas para la Fiesta o Club Nocturno.
+
+        Este código permitirá únicamente acceder al establecimiento, para el cual el Promotor o RRPP es anfitrión.
+      </p>
+      <p class="letra-comun">
+        Para que el cliente pueda por ejemplo, comprar una entrada, deberá primeramente descargar la app (disponible
+        para Android e IOS) y luego de registrarse en la misma se le permitirá ingre- sar el código informado por el
+        RRPP para que se le disponibilicen todas las opciones que puede realizar en esa Fiesta o Club Nocturno, asociado
+        a ese RRPP.
+      </p>
+      <p class="letra-comun">
+        Cada código introducido de un RRPP o Promotor se ingresa por única vez.
+
+        ¿Porque el cliente tiene que ingresar un código?, porque la app puede estar operando también para otras
+        Fiestas o Clubes Nocturnos y el cliente solo va a poder visualizar las Fiestas o Clubes Nocturnos de los
+        códigos introducidos.
+      </p>
+    </div>
   </main>
+  <footer>
+    <a href="#">Contactanos</a>
+    <a href="#">Ayuda</a>
+    <a href="#">Términos y Condiciones</a>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>

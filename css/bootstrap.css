@@ -56,7 +56,7 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
+    --bs-body-color: #ffffff;
     --bs-body-bg: #fff
 }
 
@@ -72,7 +72,7 @@
     }
 }
 
-body {
+body, .letra-comun {
     margin: 0;
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);
@@ -80,7 +80,6 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
@@ -2529,6 +2528,12 @@ textarea.form-control-lg {
     -moz-appearance: none;
     appearance: none
 }
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
 
 @media (prefers-reduced-motion:reduce) {
     .form-select {
@@ -2842,13 +2847,13 @@ textarea.form-control-lg {
 }
 
 .form-floating>.form-control:not(:-moz-placeholder-shown) {
-    padding-top: 1.625rem;
+    padding-top: .625rem;
     padding-bottom: .625rem
 }
 
 .form-floating>.form-control:focus,
 .form-floating>.form-control:not(:placeholder-shown) {
-    padding-top: 1.625rem;
+    padding-top: .625rem;
     padding-bottom: .625rem
 }
 
@@ -8321,6 +8326,20 @@ fieldset:disabled .btn {
 
 .p-5 {
     padding: 3rem 
+}
+.rellenar-contenedor-left {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+}
+.rellenar-contenedor {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .px-0 {
