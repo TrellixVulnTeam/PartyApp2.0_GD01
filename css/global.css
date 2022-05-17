@@ -91,7 +91,7 @@ main {
   margin-top: 50px; }
 
 .menu {
-  background-color: #282a3149;
+  background-color: #393a3d41;
   height: 100%; }
   .menu .foto-perfil-grande {
     left: 50%;
@@ -131,7 +131,7 @@ main {
   grid-gap: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #282a3149; }
+  background-color: #393a3d41; }
   .beneficios-requisitos ul li {
     list-style: none;
     text-align: center; }
@@ -196,7 +196,7 @@ img {
   cursor: pointer; }
 
 .card {
-  background-color: rgba(40, 42, 49, 0.3);
+  background-color: rgba(57, 58, 61, 0.3);
   overflow: hidden; }
 
 .notifoto {
