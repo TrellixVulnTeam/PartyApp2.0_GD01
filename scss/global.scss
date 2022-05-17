@@ -5,7 +5,8 @@
 @import "sass2/tablet";
 @import "sass2/movil";
 @import "partial/header";
-@import "partial/mainforo";
+@import "partial/mainPerfil";
+@import "partial/mainTconN";
 
 // .populares, .proximos_eventos {
 //     background-color: gray;
@@ -22,19 +23,21 @@ main {
     margin-bottom: 15px;
 }
 .logo {
-    width: 50px;
+    width: 65px;
 }
 
 h1 {
     text-align: center
 }
 
-h2 {
+h2,h3,h4,h5 {
     @extend %h2;
+    font-family: 'Bebas Neue', cursive;
 }
 
 p {
     @extend %h2;
+    font-family: 'Bebas Neue', cursive;
 
 }
 option {
@@ -58,7 +61,7 @@ option {
 }
 
 img {
-    border-radius: 15%
+    border-radius: 25px;
 }
 
 
@@ -99,4 +102,10 @@ footer {
     a {
         padding: 14px;
     }
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

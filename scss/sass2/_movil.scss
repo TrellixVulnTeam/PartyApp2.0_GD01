@@ -4,6 +4,27 @@
 @import "sass2/mixin";
 
 @media (max-width: $mobile) {
+    .menu {
+        li {
+            justify-content: center;
+            span{
+            display: none;
+            }
+        }
+    }
+    header {
+        ul {
+        justify-content: center !important ;
+        }
+    }
+    nav {
+        .container-fluid{
+        justify-content: center !important;
+        }
+    }
+    .logo {
+        width: 90px !important;
+    }
     .seccion1 {
         width: 100%!important;
         @include acentradorDiv;
@@ -28,14 +49,13 @@
         cursor: pointer;
     }    
     h2 {
-        font-size: xx-large;
+        font-size: x-large;
     }
     p {
         font-size: larger;
     }
     li {
         list-style: none !important;
-        padding: 30px 0 30px 0 !important;
         font-size: large !important;
     }
     .notifoto {

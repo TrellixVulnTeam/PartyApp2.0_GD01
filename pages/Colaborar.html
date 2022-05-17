@@ -9,6 +9,9 @@
     content="PartyApp es unsitio donde podés comprar tus entradas y encontrar información para todo tipo de eventos">
   <meta name="keywords" content="Fiesta, Conciertos, Bares, Noche, Bandas, Cantantes, Tragos, Ocio, Diversion">
   <title>PartyApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
 </head>
@@ -41,13 +44,77 @@
     </ul>
   </header>
   <main>
-      <h1>
-          ¡Sitio en Reconstrucción!
-      </h1>
-      <div class="d-flex justify-content-center">
-        <div class="spinner-border" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
+    <div class="razon">
+      <h2>
+        Nuestro propósito
+      </h2>
+      <p>
+        Te invitamos a formar parte de nuestro equipo y crecer en conjunto. Buscamos personas que compartan nuestros valores y que cada día sean parte de nuestro propósito: ¡Ayudar a nuestra comunidad a divertirse y pasarla bomba los fines de semana!.
+      </p>
+    </div>
+    <div class="beneficios-requisitos">
+      <div class="beneficios">
+        <h2>
+          Beneficios
+        </h2>
+        <ul>
+          <li>-Recibiras mas clientes en tu empresa</li>
+          <li>-Gestionamos por tí la venta de entradas exclusiva por QR</li>
+          <li>-Recibirás datos y sugerencias sobre tus clientes</li>
+          <li>-Opcional: Te proveeremos de personal calificado para servicios de seguridad y bartend, como servicio terciario.</li>
+        </ul>
       </div>
+      <div class="requisitos">
+        <h2>Requisitos</h2>
+        <ul>
+          <li>-Ser una empresa de eventos, fiestas, bar o discotecas.</li>
+          <li>-Tener un local físico</li>
+          <li>-Tener una buena reputación con los clientes del lugar</li>
+          <li>-Residir en Uruguay</li>
+        </ul>
+      </div>
+    </div>
+    <div class="formulario-colaboracion">
+      <h2>Si quieres formar parte de nuestro equipo, rellena el formulario a continuación</h2>
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12">
+          <label class="visually-hidden" for="inlineFormInputGroupUsername">Empresa</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Nombre de empresa">
+          </div>
+        </div>
+      
+        <div class="col-12">
+          <label class="visually-hidden" for="inlineFormSelectPref">Tipo de Empresa</label>
+          <select class="form-select" id="inlineFormSelectPref">
+            <option selected>Elegir...</option>
+            <option value="1">Bar</option>
+            <option value="2">Discoteca</option>
+            <option value="3">Otros</option>
+          </select>
+        </div>
+      
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+            <label class="form-check-label" for="inlineFormCheck">
+              Cumplo los requisitos.
+            </label>
+          </div>
+        </div>
+      
+        <div class="col-12">
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </div>
+      </form>
+    </div>
   </main>
+  <footer>
+    <a href="#">Contactanos</a>
+    <a href="#">Ayuda</a>
+    <a href="#">Términos y Condiciones</a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
 </body>

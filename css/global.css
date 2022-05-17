@@ -3,7 +3,7 @@
   left: 50%;
   transform: translateX(-50%); }
 
-h2, p {
+h2, h3, h4, h5, p {
   text-align: center; }
 
 .seccion1, .carrusel_con_imagenes_peque {
@@ -11,7 +11,7 @@ h2, p {
   left: 50%;
   transform: translateX(-50%); }
 
-h2, p {
+h2, h3, h4, h5, p {
   text-align: center; }
 
 .seccion1, .carrusel_con_imagenes_peque {
@@ -19,10 +19,20 @@ h2, p {
   left: 50%;
   transform: translateX(-50%); }
 
-h2, p {
+h2, h3, h4, h5, p {
   text-align: center; }
 
 @media (max-width: 480px) {
+  .menu li {
+    justify-content: center; }
+    .menu li span {
+      display: none; }
+  header ul {
+    justify-content: center !important; }
+  nav .container-fluid {
+    justify-content: center !important; }
+  .logo {
+    width: 90px !important; }
   .seccion1 {
     width: 100% !important;
     position: static;
@@ -43,12 +53,11 @@ h2, p {
     width: 80px !important;
     cursor: pointer; }
   h2 {
-    font-size: xx-large; }
+    font-size: x-large; }
   p {
     font-size: larger; }
   li {
     list-style: none !important;
-    padding: 30px 0 30px 0 !important;
     font-size: large !important; }
   .notifoto {
     max-width: 220px !important; }
@@ -56,26 +65,33 @@ h2, p {
     width: 60% !important; } }
 
 header ul {
-  background-color: #9c528b; }
+  background-color: #BC1C88; }
   header ul li .nav-link {
-    color: #1D1E2C;
-    font-size: large; }
+    color: #000000;
+    font-size: large;
+    font-family: 'Bebas Neue', cursive; }
+
+header {
+  width: 100%; }
 
 .seccion1, .carrusel_con_imagenes_peque {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
 
-h2, p {
+h2, h3, h4, h5, p {
   text-align: center; }
 
 .perfil-section {
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 20% 80%;
   grid-template-rows: 100%; }
 
+main {
+  margin-top: 50px; }
+
 .menu {
-  background-color: #59656f;
+  background-color: #282a3149;
   height: 100%; }
   .menu .foto-perfil-grande {
     left: 50%;
@@ -88,35 +104,66 @@ h2, p {
     margin-top: 30px;
     transform: translateY(-20%); }
     .menu ul li {
+      display: flex;
+      align-items: center;
       list-style: none;
-      text-align: center;
-      font-size: x-large;
-      padding: 30px;
-      color: #d7cdcc;
-      cursor: pointer; }
+      text-align: left;
+      padding: 15px 0 15px 0;
+      cursor: pointer;
+      font-family: 'Bebas Neue', cursive; }
+      .menu ul li span {
+        font-size: large;
+        color: #d7cdcc; }
+      .menu ul li img {
+        width: 30px; }
     .menu ul li:hover {
-      background-color: #1D1E2C; }
+      background-color: #000000; }
 
 .formulario-perfil {
   padding-left: 30px; }
+
+.razon {
+  padding: 40px; }
+
+.beneficios-requisitos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #282a3149; }
+  .beneficios-requisitos ul li {
+    list-style: none;
+    text-align: center; }
+
+.formulario-colaboracion {
+  margin-top: 40px; }
+  .formulario-colaboracion .align-items-center {
+    justify-content: center; }
 
 * {
   color: #ffffff; }
 
 body {
-  background-color: #1D1E2C; }
+  background-color: #000000; }
 
 main {
   margin-bottom: 15px; }
 
 .logo {
-  width: 50px; }
+  width: 65px; }
 
 h1 {
   text-align: center; }
 
+h2, h3, h4, h5 {
+  font-family: 'Bebas Neue', cursive; }
+
+p {
+  font-family: 'Bebas Neue', cursive; }
+
 option {
-  color: #1D1E2C; }
+  color: #000000; }
 
 .seccion1 {
   width: 60%; }
@@ -131,7 +178,7 @@ option {
   width: 40%; }
 
 img {
-  border-radius: 15%; }
+  border-radius: 25px; }
 
 .categorias {
   display: grid;
@@ -149,7 +196,7 @@ img {
   cursor: pointer; }
 
 .card {
-  background-color: rgba(89, 101, 111, 0.3);
+  background-color: rgba(40, 42, 49, 0.3);
   overflow: hidden; }
 
 .notifoto {
@@ -158,10 +205,15 @@ img {
 
 .active {
   color: #ffffff !important;
-  background-color: #1D1E2C; }
+  background-color: #000000; }
 
 footer {
   text-align: center;
   border-top: solid 2px #ffffff; }
   footer a {
     padding: 14px; }
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

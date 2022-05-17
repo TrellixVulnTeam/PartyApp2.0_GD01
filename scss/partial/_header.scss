@@ -1,11 +1,16 @@
 @import "../variables/variables";
 
 header ul {
-    background-color: $berry;
+    background-color: #BC1C88;
+    
         li {
             .nav-link {
                 color: $negro;
                 font-size: large;
+                font-family: 'Bebas Neue', cursive;
             }
         }
     }
+header {
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+@import "../variables/variables";
+
+.razon {
+    padding: 40px ;
+}
+.beneficios-requisitos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $gris;
+        ul {
+            li {
+                list-style: none;
+                text-align: center;
+            }
+        }
+}
+
+.formulario-colaboracion {
+    margin-top: 40px ;
+    .align-items-center {
+        justify-content: center;
+    }
+}
