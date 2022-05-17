@@ -1,7 +1,7 @@
 {
   "name": "partyapp2.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "PartyApp es unsitio donde podés comprar tus entradas y encontrar información para todo tipo de eventos",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/global.scss css/global.css",
