@@ -1,0 +1,50 @@
+@import "../variables/variables";
+
+.arregloContainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-deck .card {
+    min-width: 220px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 576px) {
+    .card-deck {
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    .card-deck .card {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+}
+ul li a {
+    font-family: $letraCool;
+}
+
+.AAdminNav {
+    justify-content: space-evenly;
+    background-color: $grisclaro;
+    a {
+        color: $negro;
+    }
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grafica {
+    display: block;
+    height: 300px;
+}

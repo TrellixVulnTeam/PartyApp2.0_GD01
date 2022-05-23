@@ -9,6 +9,7 @@
 @import "partial/mainTconN";
 @import "partial/mainAU";
 @import "partial/mainInicio";
+@import "partial/admin";
 
 // .populares, .proximos_eventos {
 //     background-color: gray;
@@ -75,4 +76,21 @@ html, body {
 }
 .form-control {
     background-color: $gris;
+}
+.soloflexRow {
+    display: flex;
+    width: 100%;
+}
+.soloflexCol {
+    display: flex ;
+    flex-direction: column;
+}
+.spinner-container {
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body > div {
+    padding: 0 !important;
 }

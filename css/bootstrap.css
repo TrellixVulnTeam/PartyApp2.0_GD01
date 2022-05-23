@@ -2082,7 +2082,6 @@ progress {
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-accent-bg: var(--bs-table-striped-bg);
-    color: var(--bs-table-striped-color)
 }
 
 .table-active {
@@ -5250,6 +5249,12 @@ fieldset:disabled .btn {
 .card-img-bottom {
     border-bottom-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px)
+}
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .card-group>.card {

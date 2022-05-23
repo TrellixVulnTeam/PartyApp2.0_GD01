@@ -4,6 +4,17 @@
 @import "sass2/mixin";
 
 @media all and (max-width: 768px) {
+    .AAdminTable {
+        width: 100% !important;
+    }
+    .AAdminNav {
+        flex-direction: row !important;
+        justify-content: center !important;
+        width: 100%;
+    }
+    .soloflexRow {
+        flex-direction: column;
+    }
     .AUn2 {
         margin: 50px 2% 0 2% !important;
         display: grid;

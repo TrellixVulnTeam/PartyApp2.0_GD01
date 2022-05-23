@@ -15,6 +15,14 @@ h2, h3, h4, h5, p {
   text-align: center; }
 
 @media all and (max-width: 768px) {
+  .AAdminTable {
+    width: 100% !important; }
+  .AAdminNav {
+    flex-direction: row !important;
+    justify-content: center !important;
+    width: 100%; }
+  .soloflexRow {
+    flex-direction: column; }
   .AUn2 {
     margin: 50px 2% 0 2% !important;
     display: grid;
@@ -113,9 +121,7 @@ h2, h3, h4, h5, p {
 .perfil-section {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 100%; }
-
-main {
+  grid-template-rows: 100%;
   margin-top: 50px; }
 
 .menu {
@@ -244,6 +250,47 @@ h2, h3, h4, h5, p {
   width: 100px;
   transition: all 0.2s; }
 
+.arregloContainer {
+  margin-left: auto;
+  margin-right: auto; }
+
+.card-deck .card {
+  min-width: 220px;
+  margin-bottom: 15px; }
+
+@media screen and (min-width: 576px) {
+  .card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
+  .card-deck .card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px; } }
+
+ul li a {
+  font-family: "Bebas Neue", cursive; }
+
+.AAdminNav {
+  justify-content: space-evenly;
+  background-color: #84878f79; }
+  .AAdminNav a {
+    color: #000000; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.grafica {
+  display: block;
+  height: 300px; }
+
 * {
   color: #ffffff; }
 
@@ -296,3 +343,20 @@ html, body {
 
 .form-control {
   background-color: #393a3d41; }
+
+.soloflexRow {
+  display: flex;
+  width: 100%; }
+
+.soloflexCol {
+  display: flex;
+  flex-direction: column; }
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+body > div {
+  padding: 0 !important; }
